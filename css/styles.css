@@ -65,7 +65,7 @@ li {
 .menu:hover {
   color: var(--brand-color);
 }
-.contact {
+.contact > div > a {
   text-decoration: none;
   text-align: left;
   letter-spacing: 0.02em;
@@ -74,14 +74,13 @@ li {
   color: var(--letter-color);
   gap: 50px;
 }
-.contact:visited {
+.contact > div:visited {
   color: var(--letter-color);
 }
-.contact:active {
-  color: var(--brand-color);
-}
+
 .contact:hover {
   color: var(--brand-color);
+  fill: var(--brand-color);
 }
 .box2 {
   display: flex;
@@ -103,7 +102,8 @@ li {
   justify-content: center;
   align-items: center;
   gap: 50px;
-  background-image: url(../images/bottom.jpg);
+  background-image: linear-gradient(to bottom, #2f303a66, #2f303a66),
+    url(../images/bottom.jpg);
 }
 h1 {
   font-style: normal;
@@ -171,6 +171,7 @@ h1 {
   letter-spacing: 0.03em;
   font-weight: 700;
   line-height: 1.167;
+  font-size: 36px;
 }
 .box3 {
   display: flex;
@@ -191,6 +192,7 @@ h1 {
   font-weight: 700;
   line-height: 1.167;
   padding-top: 94px;
+  font-size: 36px;
 }
 .workers {
   display: flex;
@@ -292,7 +294,7 @@ h1 {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 50px;
-  gap: 20px;
+  gap: 15px;
   margin-bottom: 82px;
 }
 .box {
@@ -338,30 +340,43 @@ h1 {
 .redes {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
 }
-.redes > a > svg {
-  fill: #afb1b8;
+.redes-f {
   padding: 11px;
 }
-.redes > a > svg:hover {
+.redes-f > a > svg {
+  fill: #afb1b8;
+}
+.redes-f:hover {
   background-color: var(--brand-color);
   border-radius: 50%;
   fill: white;
 }
-.redes-footer > a > svg {
+.redes-f > a > svg:hover {
+  fill: white;
+}
+.grupo {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: space-evenly;
+}
+.redes-footer {
   padding: 11px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   fill: white;
   margin: 5px;
 }
-.redes-footer > a > svg:hover {
+.redes-footer > a > svg {
+  fill: white;
+}
+.redes-footer:hover {
   background-color: var(--brand-color);
   border-radius: 50%;
   fill: white;
 }
-.redes-footer > h3 {
+.foote > h3 {
   text-align: left;
   letter-spacing: 0.03em;
   font-weight: 700;
@@ -369,13 +384,19 @@ h1 {
   color: white;
   padding-bottom: 20px;
 }
+.rec-redes {
+  width: 44px;
+  right: 44px;
+  display: flex;
+  justify-content: space-between;
+}
 .clientes-logo {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-bottom: 152px;
 }
-.clientes-logo > a > svg {
+.clientes > a > svg {
   width: 170px;
   height: 81px;
   fill: #afb1b8;
@@ -383,7 +404,8 @@ h1 {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.clientes-logo > a > svg:hover {
+.clientes-logo > li > a > svg:hover {
+  border: 1px solid var(--brand-color);
   fill: var(--brand-color);
 }
 .clientes > h2 {
@@ -393,4 +415,5 @@ h1 {
   line-height: 1.167;
   padding-top: 58px;
   padding-bottom: 44px;
+  font-size: 36px;
 }

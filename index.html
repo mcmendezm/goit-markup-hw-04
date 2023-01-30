@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Estudio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Ralewayfamily=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
   </head>
   <body>
@@ -29,13 +29,23 @@
           </ul>
         </nav>
         <ul class="box2">
-          <li>
-            <a class="contact" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+          <li class="contact">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12">
+                <use href="./images/icons.svg#icon-sobre"></use>
+              </svg>
+              <a class="contact" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </div>
           </li>
-          <li>
-            <a class="contact" href="tel:+525555296000">+52 55 5529 6000</a>
+          <li class="contact">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16">
+                <use href="./images/icons.svg#icon-telefono-inteligente"></use>
+              </svg>
+              <a class="contact" href="tel:+525555296000">+52 55 5529 6000</a>
+            </div>
           </li>
         </ul>
       </div>
@@ -55,9 +65,7 @@
           <li>
             <div class="images-1">
               <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70">
-                <use
-                  href="./images/icomoon/symbol-defs.svg#icon-antena-1"
-                ></use>
+                <use href="./images/icons.svg#icon-antena-1"></use>
               </svg>
             </div>
             <h3>ATENCIÓN A LOS DETALLES</h3>
@@ -69,7 +77,7 @@
           <li>
             <div class="images-1">
               <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70">
-                <use href="./images/icomoon/symbol-defs.svg#icon-reloj-1"></use>
+                <use href="./images/icons.svg#icon-reloj-1"></use>
               </svg>
             </div>
             <h3>PUNTUALIDAD</h3>
@@ -82,9 +90,7 @@
           <li>
             <div class="images-1">
               <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70">
-                <use
-                  href="./images/icomoon/symbol-defs.svg#icon-diagrama-1"
-                ></use>
+                <use href="./images/icons.svg#icon-diagrama-1"></use>
               </svg>
             </div>
             <h3>PLANIFICACIÓN</h3>
@@ -96,9 +102,7 @@
           <li>
             <div class="images-1">
               <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70">
-                <use
-                  href="./images/icomoon/symbol-defs.svg#icon-astronauta-1"
-                ></use>
+                <use href="./images/icons.svg#icon-astronauta-1"></use>
               </svg>
             </div>
             <h3>TECNOLOGÍA MODERNA</h3>
@@ -129,7 +133,7 @@
           </li>
         </ul>
       </section>
-      <section class="description-company">
+      <section class="description-company container">
         <h2>Nuestro equipo</h2>
         <ul class="workers">
           <li>
@@ -141,34 +145,52 @@
             <h3>Andrés Cubo</h3>
             <p>Diseñador de Productos</p>
             <div class="redes">
-              <a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44">
-                  <use
-                    href="./images/icomoon/symbol-defs.svg#icon-instagram"
-                  ></use>
-                </svg>
-              </a>
-              <a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44">
-                  <use
-                    href="./images/icomoon/symbol-defs.svg#icon-twitter"
-                  ></use>
-                </svg>
-              </a>
-              <a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44">
-                  <use
-                    href="./images/icomoon/symbol-defs.svg#icon-facebook"
-                  ></use>
-                </svg>
-              </a>
-              <a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44">
-                  <use
-                    href="./images/icomoon/symbol-defs.svg#icon-linkedin2"
-                  ></use>
-                </svg>
-              </a>
+              <ul class="grupo">
+                <li class="redes-f">
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="redes-f">
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="redes-f">
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="redes-f">
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="./images/icons.svg#icon-linkedin2"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
           </li>
           <li>
@@ -180,34 +202,52 @@
             <h3>Carla Palacios</h3>
             <p>Desarrolladora Fronend</p>
             <div class="redes">
-              <a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44">
-                  <use
-                    href="./images/icomoon/symbol-defs.svg#icon-instagram"
-                  ></use>
-                </svg>
-              </a>
-              <a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44">
-                  <use
-                    href="./images/icomoon/symbol-defs.svg#icon-twitter"
-                  ></use>
-                </svg>
-              </a>
-              <a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44">
-                  <use
-                    href="./images/icomoon/symbol-defs.svg#icon-facebook"
-                  ></use>
-                </svg>
-              </a>
-              <a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44">
-                  <use
-                    href="./images/icomoon/symbol-defs.svg#icon-linkedin2"
-                  ></use>
-                </svg>
-              </a>
+              <ul class="grupo">
+                <li class="redes-f">
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="redes-f">
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="redes-f">
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="redes-f">
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="./images/icons.svg#icon-linkedin2"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
           </li>
           <li>
@@ -219,34 +259,52 @@
             <h3>Mario Dorado</h3>
             <p>Marketing</p>
             <div class="redes">
-              <a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44">
-                  <use
-                    href="./images/icomoon/symbol-defs.svg#icon-instagram"
-                  ></use>
-                </svg>
-              </a>
-              <a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44">
-                  <use
-                    href="./images/icomoon/symbol-defs.svg#icon-twitter"
-                  ></use>
-                </svg>
-              </a>
-              <a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44">
-                  <use
-                    href="./images/icomoon/symbol-defs.svg#icon-facebook"
-                  ></use>
-                </svg>
-              </a>
-              <a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44">
-                  <use
-                    href="./images/icomoon/symbol-defs.svg#icon-linkedin2"
-                  ></use>
-                </svg>
-              </a>
+              <ul class="grupo">
+                <li class="redes-f">
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="redes-f">
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="redes-f">
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="redes-f">
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="./images/icons.svg#icon-linkedin2"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
           </li>
           <li>
@@ -258,72 +316,102 @@
             <h3>Pablo Mijangos</h3>
             <p>Diseñador IU</p>
             <div class="redes">
-              <a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44">
-                  <use
-                    href="./images/icomoon/symbol-defs.svg#icon-instagram"
-                  ></use>
-                </svg>
-              </a>
-              <a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44">
-                  <use
-                    href="./images/icomoon/symbol-defs.svg#icon-twitter"
-                  ></use>
-                </svg>
-              </a>
-              <a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44">
-                  <use
-                    href="./images/icomoon/symbol-defs.svg#icon-facebook"
-                  ></use>
-                </svg>
-              </a>
-              <a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44">
-                  <use
-                    href="./images/icomoon/symbol-defs.svg#icon-linkedin2"
-                  ></use>
-                </svg>
-              </a>
+              <ul class="grupo">
+                <li class="redes-f">
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="redes-f">
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="redes-f">
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="redes-f">
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="./images/icons.svg#icon-linkedin2"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
           </li>
         </ul>
       </section>
       <section class="clientes container">
         <h2>Clientes Regulares</h2>
-        <div class="clientes-logo">
-          <a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44">
-              <use href="./images/icomoon/symbol-defs.svg#icon-Logo"></use>
-            </svg>
-          </a>
-          <a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44">
-              <use href="./images/icomoon/symbol-defs.svg#icon-Logo-2"></use>
-            </svg>
-          </a>
-          <a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44">
-              <use href="./images/icomoon/symbol-defs.svg#icon-Logo-3"></use>
-            </svg>
-          </a>
-          <a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44">
-              <use href="./images/icomoon/symbol-defs.svg#icon-Logo-5"></use>
-            </svg>
-          </a>
-          <a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44">
-              <use href="./images/icomoon/symbol-defs.svg#icon-Logo-6"></use>
-            </svg>
-          </a>
-          <a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44">
-              <use href="./images/icomoon/symbol-defs.svg#icon-Logo-7"></use>
-            </svg>
-          </a>
-        </div>
+        <ul class="clientes-logo">
+          <li class="clientes">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="106" height="53">
+                <use href="./images/icons.svg#icon-Logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clientes">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="106" height="53">
+                <use href="./images/icons.svg#icon-Logo-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clientes">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="106" height="53">
+                <use href="./images/icons.svg#icon-Logo-3"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clientes">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="106" height="53">
+                <use href="./images/icons.svg#icon-Logo-5"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clientes">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="106" height="53">
+                <use href="./images/icons.svg#icon-Logo-6"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clientes">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44">
+                <use href="./images/icons.svg#icon-Logo-7"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="end">
@@ -353,28 +441,38 @@
         </address>
       </div>
       <div>
-        <div class="redes-footer">
+        <div class="foote">
           <h3>ENCUENTRENOS EN</h3>
-          <a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44">
-              <use href="./images/icomoon/symbol-defs.svg#icon-instagram"></use>
-            </svg>
-          </a>
-          <a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44">
-              <use href="./images/icomoon/symbol-defs.svg#icon-twitter"></use>
-            </svg>
-          </a>
-          <a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44">
-              <use href="./images/icomoon/symbol-defs.svg#icon-facebook"></use>
-            </svg>
-          </a>
-          <a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44">
-              <use href="./images/icomoon/symbol-defs.svg#icon-linkedin2"></use>
-            </svg>
-          </a>
+          <ul class="rec-redes">
+            <li class="redes-footer">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="redes-footer">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="redes-footer">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="redes-footer">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin2"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
