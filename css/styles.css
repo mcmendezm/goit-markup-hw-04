@@ -4,6 +4,7 @@
   --letter-color: #757575;
   --tittle-color: #212121;
   --company-color: #f5f4fa;
+  --color-white: #ffffff;
 }
 body {
   color: var(--tittle-color);
@@ -35,6 +36,10 @@ h3 {
 li {
   list-style-type: none;
 }
+a {
+  text-decoration: none;
+  color: currentColor;
+}
 .logo {
   font-family: raleway, sans-serif;
   color: var(--brand-color);
@@ -65,7 +70,7 @@ li {
 .menu:hover {
   color: var(--brand-color);
 }
-.contact > div > a {
+.contact > a {
   text-decoration: none;
   text-align: left;
   letter-spacing: 0.02em;
@@ -73,12 +78,15 @@ li {
   line-height: 1.143;
   color: var(--letter-color);
   gap: 50px;
+  fill: var(--letter-color);
 }
-.contact > div:visited {
-  color: var(--letter-color);
+.contact > a > svg {
+  display: flex;
+  align-items: center;
+  gap: 2px;
 }
 
-.contact:hover {
+.contact > a:hover {
   color: var(--brand-color);
   fill: var(--brand-color);
 }
@@ -342,39 +350,43 @@ h1 {
   justify-content: space-evenly;
 }
 .redes-f {
-  padding: 11px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
 }
 .redes-f > a > svg {
-  fill: #afb1b8;
+  fill: currentColor;
 }
 .redes-f:hover {
   background-color: var(--brand-color);
   border-radius: 50%;
-  fill: white;
-}
-.redes-f > a > svg:hover {
-  fill: white;
+  color: var(--color-white);
 }
 .grupo {
   display: flex;
-  width: 44px;
-  height: 44px;
   justify-content: space-evenly;
 }
 .redes-footer {
-  padding: 11px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  fill: white;
+  color: white;
   margin: 5px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .redes-footer > a > svg {
-  fill: white;
+  fill: currentColor;
 }
 .redes-footer:hover {
   background-color: var(--brand-color);
   border-radius: 50%;
-  fill: white;
+  color: white;
 }
 .foote > h3 {
   text-align: left;
@@ -385,10 +397,8 @@ h1 {
   padding-bottom: 20px;
 }
 .rec-redes {
-  width: 44px;
-  right: 44px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .clientes-logo {
   display: flex;
@@ -404,7 +414,7 @@ h1 {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.clientes-logo > li > a > svg:hover {
+.clientes > a > svg:hover {
   border: 1px solid var(--brand-color);
   fill: var(--brand-color);
 }
