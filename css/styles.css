@@ -77,8 +77,10 @@ a {
   font-weight: 500;
   line-height: 1.143;
   color: var(--letter-color);
-  gap: 50px;
+  gap: 5px;
   fill: var(--letter-color);
+  display: flex;
+  align-items: center;
 }
 .contact > a > svg {
   display: flex;
