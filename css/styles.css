@@ -288,6 +288,21 @@ h1 {
 .active {
   color: var(--brand-color);
 }
+.clase .active::after {
+  content: "";
+  background-color: var(--brand-color);
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  left: 0;
+  bottom: -30px;
+}
+.clase .menu {
+  position: relative;
+  display: flex;
+  text-align: center;
+}
+
 .option {
   color: white;
   background-color: var(--brand-color);
